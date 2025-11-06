@@ -51,4 +51,17 @@ Cada usuário mantém seu próprio histórico e carrinho de forma independente.
 - **JavaScript (ES6+)**  
 - **AsyncStorage** para persistência local  
 
+## Telas
+
+<div align="center">
+
+  <img src="https://github.com/user-attachments/assets/0b02c277-4acf-4e47-8a3b-108d6d2fd311" alt="Captura de tela 1" height="300" style="margin: 5px;" />
+  <img src="https://github.com/user-attachments/assets/f428c69f-8533-4e6c-9668-66395069cae7" alt="Captura de tela 2" height="300" style="margin: 5px;" />
+  <img src="https://github.com/user-attachments/assets/58010c2e-f1b1-4cfa-be28-6dfca2b5e2ab" alt="Captura de tela 3" height="300" style="margin: 5px;" />
+
+</div>
+
+
+
+
 
