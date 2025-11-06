@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import { View, StyleSheet, Alert, Vibration } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -7,11 +8,19 @@ import TelaProdutos from "./components/TelaProdutos";
 import TelaCarrinho from "./components/TelaCarrinho";
 import TelaHistorico from "./components/TelaHistorico";
 import TelaMaisVendidos from "./components/TelaMaisVendidos";
+=======
+import React, { useState } from "react";
+import { View, StyleSheet } from "react-native";
+import LoginCadastro from "./components/LoginCadastro";
+import TelaProdutos from "./components/TelaProdutos";
+import TelaCarrinho from "./components/TelaCarrinho";
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
 
 export default function App() {
   const [tela, setTela] = useState("login");
   const [usuarioAtual, setUsuarioAtual] = useState("");
   const [carrinho, setCarrinho] = useState([]);
+<<<<<<< HEAD
   const [historico, setHistorico] = useState([]);
   const [maisVendidos, setMaisVendidos] = useState({});
 
@@ -53,6 +62,8 @@ export default function App() {
   useEffect(() => {
     AsyncStorage.setItem("maisVendidos", JSON.stringify(maisVendidos));
   }, [maisVendidos]);
+=======
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
 
   const adicionarAoCarrinho = (produto) => {
     setCarrinho((atual) => [...atual, produto]);
@@ -62,6 +73,7 @@ export default function App() {
     setCarrinho((atual) => atual.filter((_, i) => i !== index));
   };
 
+<<<<<<< HEAD
   const finalizarCompra = async () => {
     if (carrinho.length === 0) {
       Alert.alert("Carrinho vazio", "Adicione produtos antes de finalizar!");
@@ -90,12 +102,20 @@ export default function App() {
     setMaisVendidos(atualizados);
 
     Alert.alert("Sucesso", "Compra finalizada!");
+=======
+  const finalizarCompra = () => {
+    alert("Compra finalizada com sucesso!");
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
     setCarrinho([]);
     setTela("produtos");
   };
 
   return (
     <View style={styles.container}>
+<<<<<<< HEAD
+=======
+      {}
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
       {tela === "login" && (
         <LoginCadastro
           onLoginSuccess={() => setTela("produtos")}
@@ -103,11 +123,16 @@ export default function App() {
         />
       )}
 
+<<<<<<< HEAD
+=======
+      {}
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
       {tela === "produtos" && (
         <TelaProdutos
           usuario={usuarioAtual}
           sair={() => setTela("login")}
           irCarrinho={() => setTela("carrinho")}
+<<<<<<< HEAD
           irHistorico={() => setTela("historico")}
           irMaisVendidos={() => setTela("maisVendidos")}
           adicionarAoCarrinho={adicionarAoCarrinho}
@@ -115,6 +140,13 @@ export default function App() {
         />
       )}
 
+=======
+          adicionarAoCarrinho={adicionarAoCarrinho}
+        />
+      )}
+
+      {}
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
       {tela === "carrinho" && (
         <TelaCarrinho
           carrinho={carrinho}
@@ -123,6 +155,7 @@ export default function App() {
           finalizarCompra={finalizarCompra}
         />
       )}
+<<<<<<< HEAD
 
       {tela === "historico" && (
         <TelaHistorico historico={historico} voltar={() => setTela("produtos")} />
@@ -131,10 +164,18 @@ export default function App() {
       {tela === "maisVendidos" && (
         <TelaMaisVendidos maisVendidos={maisVendidos} voltar={() => setTela("produtos")} />
       )}
+=======
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+<<<<<<< HEAD
   container: { flex: 1 },
+=======
+  container: {
+    flex: 1,
+  },
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
 });

@@ -1,7 +1,13 @@
 import React from "react";
+<<<<<<< HEAD
 import { View, Text, Button, StyleSheet, Image, ScrollView, TouchableOpacity } from "react-native";
 
 export default function TelaProdutos({ usuario, sair, irCarrinho, irHistorico, irMaisVendidos, adicionarAoCarrinho, carrinho }) {
+=======
+import { View, Text, Button, StyleSheet, Image, ScrollView } from "react-native";
+
+export default function TelaProdutos({ usuario, sair, irCarrinho, adicionarAoCarrinho }) {
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
   const produtos = [
     {
       id: 1,
@@ -36,6 +42,7 @@ export default function TelaProdutos({ usuario, sair, irCarrinho, irHistorico, i
       <Text style={styles.titulo}>Loja de Artigos Esportivos</Text>
       <Text style={styles.subtitulo}>Bem-vindo, {usuario}!</Text>
 
+<<<<<<< HEAD
      
       <View style={styles.topButtons}>
       
@@ -60,6 +67,8 @@ export default function TelaProdutos({ usuario, sair, irCarrinho, irHistorico, i
       </View>
 
       
+=======
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
       {produtos.map((item) => (
         <View key={item.id} style={styles.card}>
           <Image source={{ uri: item.imagem }} style={styles.imagem} />
@@ -72,8 +81,14 @@ export default function TelaProdutos({ usuario, sair, irCarrinho, irHistorico, i
         </View>
       ))}
 
+<<<<<<< HEAD
       <View style={{ marginTop: 10 }}>
         <Button title="Sair" onPress={sair} color="black" />
+=======
+      <View style={{ marginTop: 10, flexDirection: "row", gap: 10 }}>
+        <Button title="Ver Carrinho" onPress={irCarrinho} />
+        <Button title="Sair" onPress={sair} color="#d9534f" />
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
       </View>
     </ScrollView>
   );
@@ -83,6 +98,7 @@ const styles = StyleSheet.create({
   container: { alignItems: "center", backgroundColor: "#f0f2f5", paddingVertical: 20 },
   titulo: { fontSize: 26, fontWeight: "bold", marginBottom: 10, color: "#003366" },
   subtitulo: { fontSize: 18, marginBottom: 20 },
+<<<<<<< HEAD
   topButtons: {
     flexDirection: "row",
     alignItems: "center",
@@ -117,6 +133,8 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
   },
   badgeText: { color: "#fff", fontWeight: "bold", fontSize: 12 },
+=======
+>>>>>>> b1338d46ee0542b889b7ad967068da30277675db
   card: {
     backgroundColor: "#fff",
     borderRadius: 10,

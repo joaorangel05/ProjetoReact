@@ -8,17 +8,13 @@
     "web": "expo start --web"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "expo": "~54.0.22",
-=======
     "expo": "~54.0.20",
->>>>>>> b1338d46ee0542b889b7ad967068da30277675db
     "expo-status-bar": "~3.0.8",
     "react": "19.1.0",
     "react-native": "0.81.5",
-    "firebase": "8.2.3",
-    "@expo/vector-icons": "^15.0.3",
     "react-native-paper": "4.9.2",
+    "@expo/vector-icons": "^15.0.3",
+    "firebase": "8.2.3",
     "@react-native-async-storage/async-storage": "2.2.0"
   },
   "private": true

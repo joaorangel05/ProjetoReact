@@ -1,11 +1,7 @@
 {
   "expo": {
     "name": "projeto",
-<<<<<<< HEAD
-    "slug": "snack-41a00105-9a0a-4a9c-9ccb-86e8b81c12b1",
-=======
-    "slug": "snack-8a2abb72-be4f-4d4a-b624-b19708ee2305",
->>>>>>> b1338d46ee0542b889b7ad967068da30277675db
+    "slug": "snack-03e404ed-8873-4ee5-aecb-4daa6bcc49f6",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
